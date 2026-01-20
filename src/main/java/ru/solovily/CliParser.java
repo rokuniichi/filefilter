@@ -47,7 +47,7 @@ public class CliParser {
 
         HelpFormatter helpFormatter = HelpFormatter.builder().setShowSince(false).get();
         try {
-            helpFormatter.printHelp("java -jar [name].jar [-s/f] [-a] [-o <PATH>] [-p <PREFIX>] <FILES>", header, this.options, footer, false);
+            helpFormatter.printHelp("java -jar filefilter.jar [-s/f] [-a] [-o <PATH>] [-p <PREFIX>] <FILES>", header, this.options, footer, false);
         } catch (IOException e) {
             System.err.println("Error while trying to display help message: " + e.getMessage());
         }

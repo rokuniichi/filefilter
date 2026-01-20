@@ -19,6 +19,10 @@ dependencies {
 }
 
 tasks.jar {
+    archiveBaseName.set("filefilter")
+    archiveVersion.set("")      // ← removes version
+    archiveClassifier.set("")   // ← removes classifier (like "plain")
+
     manifest {
         attributes["Main-Class"] = "ru.solovily.Main"
     }
