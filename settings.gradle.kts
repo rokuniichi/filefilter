@@ -1,1 +1,1 @@
-rootProject.name = "FileFilter"
+rootProject.name = "filefilter"
