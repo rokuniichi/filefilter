@@ -42,7 +42,7 @@ public class CliParser {
     }
 
     public void printHelp() {
-        String header = "File content filter utility";
+        String header = "File Content Filter Utility";
         String footer = "Please report issues at https://github.com/rokuniichi/filefilter/issues";
 
         HelpFormatter helpFormatter = HelpFormatter.builder().setShowSince(false).get();
@@ -57,14 +57,14 @@ public class CliParser {
         Options options = new Options();
 
         OptionGroup statsGroup = new OptionGroup();
-        statsGroup.addOption(createOption("s", "short", "Toggle short statistics mode (amount only)"));
-        statsGroup.addOption(createOption("f", "full", "Toggle full statistics mode (min/max/sum/avg)"));
+        statsGroup.addOption(createOption("s", "short", "Display short statistics (amount only)"));
+        statsGroup.addOption(createOption("f", "full", "Display full statistics (min/max/sum/avg)"));
         statsGroup.setRequired(false);
         options.addOptionGroup(statsGroup);
 
-        options.addOption(createOption("a", "append", "Toggle append mode (default: full rewrite)"));
-        options.addOption(createOption("o", "output", "Output files path (default: current directory)", "PATH"));
-        options.addOption(createOption("p", "prefix", "Output files' names prefix (default: none)", "PREFIX"));
+        options.addOption(createOption("a", "append", "Append mode (default: overwrite)"));
+        options.addOption(createOption("o", "output", "Output directory path (default: current directory)", "PATH"));
+        options.addOption(createOption("p", "prefix", "Prefix for output files (default: none)", "PREFIX"));
 
         return options;
     }
