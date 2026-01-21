@@ -4,11 +4,11 @@
 A console utility that filters files' (both single and multiple files input configurations are supported) contents into three separate categories based on their data type (integers, decimals, strings). Each data type is then sorted into a corresponding output file. The process statistics are optionally collected and subsequently displayed in the console.
 
 ## Requirements
-- **Java 25**
+- **[Java 25](https://www.oracle.com/java/technologies/downloads/#java25) (Oracle Java SE Development Kit)**
 - **Gradle 9.2.0**
 
 ## Dependencies
-- **Apache Commons CLI 1.11** - for command line argument parsing
+- **[Apache Commons CLI 1.11](https://commons.apache.org/proper/commons-cli/)** - for command line argument parsing
 - All dependencies are automatically managed through Gradle
 
 ## Building
