@@ -23,7 +23,7 @@ JAR file will be located at `build/libs/`
 
 ## Usage
 ```bash
-java -jar filefilter.jar [-s/f] [-a] [-o <PATH>] [-p <PREFIX>] <FILES>
+java -jar filefilter.jar [-s/-f] [-a] [-o <PATH>] [-p <PREFIX>] <FILES>
 ```
 
 ### Options
