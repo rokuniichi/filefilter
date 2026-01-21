@@ -64,7 +64,7 @@ java -jar filefilter.jar --help
 - `BigDecimal` scale is `4` and `HALF_UP` rounding mode is applied
 
 ## Notes
-- With the -a option, files are either created or appended based on file existence and data availability 
-- The prefix -p applies to all output files
+- With the `-a/--append` option, files are either created or appended based on file existence and data availability 
+- The prefix `-p/--prefix` applies to all output files
 - Output files are created only when there's data of that type (no empty files)
 - The program handles various number formats including scientific notation
